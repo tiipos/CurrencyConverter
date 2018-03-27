@@ -23,7 +23,7 @@ const InputWithButton = (props) => {
         <Text style={styles.buttonText}>{props.buttonText}</Text>
       </TouchableHighlight>
       <View style={styles.separator} />
-      <TextInput style={styles.input} underlineColorAndroid="transparent" />
+      <TextInput style={styles.input} underlineColorAndroid="transparent" {...props} />
     </View>
   );
 };
