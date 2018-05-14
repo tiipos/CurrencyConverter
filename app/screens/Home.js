@@ -30,7 +30,7 @@ class Home extends Component {
   };
 
   handlePressQuoteCurrency = () => {
-    this.props.navigation.navigate('CurrencyList', { title: 'Base currency' });
+    this.props.navigation.navigate('CurrencyList', { title: 'Quote currency' });
   };
 
   handle = () => {
@@ -38,7 +38,7 @@ class Home extends Component {
   };
 
   handleOptionsPress = () => {
-    console.log('options press');
+    this.props.navigation.navigate('Options');
   };
 
   render() {
